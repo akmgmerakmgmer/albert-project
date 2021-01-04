@@ -446,6 +446,15 @@ body, html {
           transition: 0.5s; }
           body main .footer p span:hover, html main .footer p span:hover {
             border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    @media (max-width: 575.98px) {
+      body main .footer, html main .footer {
+        padding-left: 30px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .footer, html main .footer {
+        padding-left: 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .footer, html main .footer {
+        padding-left: 30px; } }
 
 .button {
   background: #FA5B0F;
