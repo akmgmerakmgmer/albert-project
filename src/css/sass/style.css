@@ -1,0 +1,567 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: montserrat;
+  letter-spacing: 0.8px;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+  body .setting, html .setting {
+    background: black;
+    padding: 15px 17px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 9999999999999;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed; }
+  body .backgrounds, html .backgrounds {
+    background: black;
+    width: auto;
+    padding: 30px 20px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    z-index: 9999999999999;
+    text-align: center;
+    transform: translate(100%);
+    transition: 0.5s;
+    position: fixed; }
+    body .backgrounds i, html .backgrounds i {
+      color: white; }
+    body .backgrounds h5, html .backgrounds h5 {
+      color: white;
+      letter-spacing: 3px;
+      border-bottom: 2px solid grey;
+      width: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    body .backgrounds button:nth-child(3), html .backgrounds button:nth-child(3) {
+      background: #333333; }
+    body .backgrounds button:nth-child(4), html .backgrounds button:nth-child(4) {
+      background: red; }
+    body .backgrounds button:nth-child(5), html .backgrounds button:nth-child(5) {
+      background: green; }
+    body .backgrounds button:nth-child(6), html .backgrounds button:nth-child(6) {
+      background: orange; }
+    body .backgrounds button:nth-child(7), html .backgrounds button:nth-child(7) {
+      background: #4169E1; }
+    body .backgrounds button:nth-child(8), html .backgrounds button:nth-child(8) {
+      background: #4169E1; }
+    body .backgrounds button:nth-child(9), html .backgrounds button:nth-child(9) {
+      background: #00D4BD; }
+    body .backgrounds button:nth-child(10), html .backgrounds button:nth-child(10) {
+      background: #66B95C; }
+    body .backgrounds button:nth-child(11), html .backgrounds button:nth-child(11) {
+      background: #E54B4B; }
+    body .backgrounds button:nth-child(12), html .backgrounds button:nth-child(12) {
+      background: #666D41; }
+    body .backgrounds button:nth-child(13), html .backgrounds button:nth-child(13) {
+      background: #9200EE; }
+    body .backgrounds button:nth-child(14), html .backgrounds button:nth-child(14) {
+      background: #666D41; }
+    body .backgrounds button:nth-child(15), html .backgrounds button:nth-child(15) {
+      background: #FF5E94; }
+    body .backgrounds button:nth-child(16), html .backgrounds button:nth-child(16) {
+      background: yellow; }
+    body .backgrounds button, html .backgrounds button {
+      border-radius: 50%;
+      padding: 14px;
+      cursor: pointer;
+      border: none;
+      margin-left: 10px;
+      margin-top: 10px; }
+  body .wrapper, html .wrapper {
+    cursor: pointer;
+    position: absolute;
+    right: -20px;
+    top: 20px;
+    display: none;
+    z-index: 1; }
+    body .wrapper .icon, html .wrapper .icon {
+      position: relative;
+      width: 100px;
+      height: 100px; }
+      body .wrapper .icon .bottom, html .wrapper .icon .bottom {
+        top: 38%; }
+      body .wrapper .icon .center, html .wrapper .icon .center {
+        top: 28%;
+        width: 30%; }
+      body .wrapper .icon .top, html .wrapper .icon .top {
+        top: 18%; }
+      body .wrapper .icon .line, html .wrapper .icon .line {
+        position: absolute;
+        height: 5px;
+        background: black;
+        width: 40%;
+        border-radius: 5px;
+        transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.25s; }
+  body header, html header {
+    background: #000000;
+    position: fixed;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    width: 348px; }
+    body header .logo2, html header .logo2 {
+      display: none;
+      height: 50px;
+      margin-left: 20px;
+      margin-top: -20px; }
+    body header nav ul, html header nav ul {
+      list-style: none;
+      color: rgba(255, 255, 255, 0.9);
+      padding-top: 100px;
+      padding-left: 0px;
+      text-decoration: none; }
+      body header nav ul li:not(:last-child), html header nav ul li:not(:last-child) {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+        margin-right: 50px; }
+        body header nav ul li:not(:last-child):hover, html header nav ul li:not(:last-child):hover {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+      body header nav ul li:hover a, html header nav ul li:hover a {
+        color: #FA5B0F; }
+      body header nav ul li a, html header nav ul li a {
+        line-height: 50px;
+        text-transform: capitalize;
+        transition: 0.3s;
+        padding-bottom: 10px;
+        padding-right: 100%;
+        font-size: 14px;
+        color: white;
+        text-decoration: none !important; }
+    body header .icons, html header .icons {
+      margin-top: 30px; }
+      body header .icons i, html header .icons i {
+        color: rgba(255, 255, 255, 0.9);
+        margin-right: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 17px; }
+        body header .icons i:hover, html header .icons i:hover {
+          color: #FA5B0F; }
+  body main, html main {
+    margin-left: 348px; }
+    body main .main1, html main .main1 {
+      background: linear-gradient(135deg, rgba(0, 34, 69, 0.3) 0%, rgba(0, 34, 69, 0.6) 100%), url("../../images/background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      position: relative; }
+      body main .main1 .main1-content, html main .main1 .main1-content {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 20px; }
+        body main .main1 .main1-content p, html main .main1 .main1-content p {
+          color: white;
+          font-size: 18px; }
+        body main .main1 .main1-content h3, html main .main1 .main1-content h3 {
+          color: white;
+          margin-top: 30px;
+          font-size: 42px;
+          font-weight: 700;
+          text-transform: uppercase; }
+          body main .main1 .main1-content h3 span, html main .main1 .main1-content h3 span {
+            color: #FA5B0F; }
+        body main .main1 .main1-content img, html main .main1 .main1-content img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          border: 10px solid rgba(20, 61, 94, 0.4); }
+    body main #services, html main #services {
+      background: #F9F9F9;
+      margin-top: 100px; }
+    body main .titles, html main .titles {
+      padding-top: 100px;
+      padding-left: 50px; }
+      body main .titles h2, html main .titles h2 {
+        font-weight: 600;
+        color: #000000;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        font-size: 36px; }
+      body main .titles span, html main .titles span {
+        color: #FA5B0F; }
+    @media (max-width: 575.98px) {
+      body main .titles, html main .titles {
+        padding-left: 30px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .titles, html main .titles {
+        padding-left: 30px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .titles, html main .titles {
+        padding-left: 30px; } }
+    body main .main2, html main .main2 {
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-top: 50px; }
+      body main .main2 div .row i, html main .main2 div .row i {
+        color: #FA5B0F;
+        margin-right: 20px;
+        width: 20px;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 15px; }
+      body main .main2 div .buttons, html main .main2 div .buttons {
+        margin-top: 60px; }
+      body main .main2 div p, html main .main2 div p {
+        margin-top: 30px;
+        color: #B0B0B0;
+        margin-right: 70px; }
+        body main .main2 div p span, html main .main2 div p span {
+          color: #FA5B0F; }
+      body main .main2 div h5 span, html main .main2 div h5 span {
+        color: #FA5B0F; }
+    @media (max-width: 575.98px) {
+      body main .main2, html main .main2 {
+        padding-left: 30px;
+        padding-right: 10px; }
+        body main .main2 p, html main .main2 p {
+          margin-right: 0 !important; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .main2, html main .main2 {
+        padding-left: 30px;
+        padding-right: 10px; }
+        body main .main2 p, html main .main2 p {
+          margin-right: 30px !important; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .main2, html main .main2 {
+        padding-left: 30px;
+        padding-right: 10px; }
+        body main .main2 p, html main .main2 p {
+          margin-right: 30px !important; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      body main .main2 p, html main .main2 p {
+        margin-right: 30px !important; } }
+    body main .main3, html main .main3 {
+      background: #F9F9F9;
+      margin-top: -8px;
+      padding-left: 50px;
+      padding-right: 35px;
+      padding-top: 60px;
+      padding-bottom: 100px; }
+      body main .main3 .main3-division2, html main .main3 .main3-division2 {
+        margin-top: 100px; }
+        body main .main3 .main3-division2 .progress-text, html main .main3 .main3-division2 .progress-text {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          color: rgba(0, 0, 0, 0.75); }
+        body main .main3 .main3-division2 .progress, html main .main3 .main3-division2 .progress {
+          height: 10px;
+          margin-bottom: 20px; }
+          body main .main3 .main3-division2 .progress .progress4, html main .main3 .main3-division2 .progress .progress4 {
+            width: 85%; }
+          body main .main3 .main3-division2 .progress .progress3, html main .main3 .main3-division2 .progress .progress3 {
+            width: 90%; }
+          body main .main3 .main3-division2 .progress .progress2, html main .main3 .main3-division2 .progress .progress2 {
+            width: 80%; }
+          body main .main3 .main3-division2 .progress .progress1, html main .main3 .main3-division2 .progress .progress1 {
+            width: 95%; }
+          body main .main3 .main3-division2 .progress .progress-bar, html main .main3 .main3-division2 .progress .progress-bar {
+            background-color: #FA5B0F; }
+        body main .main3 .main3-division2 .p2, html main .main3 .main3-division2 .p2 {
+          color: rgba(0, 0, 0, 0.6);
+          line-height: 30px; }
+        body main .main3 .main3-division2 .p1, html main .main3 .main3-division2 .p1 {
+          font-size: 20px;
+          letter-spacing: 1px; }
+      body main .main3 .main3-content, html main .main3 .main3-content {
+        background: white;
+        padding: 60px 40px;
+        border-radius: 5px;
+        box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.4);
+        margin-top: 40px; }
+        body main .main3 .main3-content p, html main .main3 .main3-content p {
+          color: #B0B0B0; }
+        body main .main3 .main3-content h5, html main .main3 .main3-content h5 {
+          font-size: 20px;
+          letter-spacing: 1.5px;
+          margin-bottom: 15px; }
+        body main .main3 .main3-content i, html main .main3 .main3-content i {
+          font-size: 42px;
+          margin-bottom: 25px;
+          color: #FA5B0F; }
+    @media (max-width: 575.98px) {
+      body main .main3, html main .main3 {
+        padding-left: 30px;
+        padding-right: 25px; }
+        body main .main3 .progress-content, html main .main3 .progress-content {
+          margin-top: 50px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .main3, html main .main3 {
+        padding-left: 30px;
+        padding-right: 25px; }
+        body main .main3 .progress-content, html main .main3 .progress-content {
+          margin-top: 50px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .main3, html main .main3 {
+        padding-left: 30px;
+        padding-right: 25px; }
+        body main .main3 .progress-content, html main .main3 .progress-content {
+          margin-top: 50px; } }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      body main .main3 .progress-content, html main .main3 .progress-content {
+        margin-top: 50px; } }
+    body main .main4, html main .main4 {
+      padding-left: 50px; }
+      body main .main4 .main4-images, html main .main4 .main4-images {
+        margin-top: 20px;
+        margin-right: 30px;
+        overflow: hidden;
+        object-fit: cover; }
+        body main .main4 .main4-images img, html main .main4 .main4-images img {
+          height: 45vh;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+          margin-top: 30px;
+          transition: 0.6s;
+          cursor: pointer; }
+      body main .main4 ul, html main .main4 ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 50px; }
+        body main .main4 ul li, html main .main4 ul li {
+          display: inline;
+          margin-right: 25px;
+          cursor: pointer;
+          color: rgba(0, 0, 0, 0.7); }
+        body main .main4 ul .active, html main .main4 ul .active {
+          color: #FA5B0F; }
+    @media (max-width: 575.98px) {
+      body main .main4, html main .main4 {
+        padding-left: 30px; }
+        body main .main4 .main4-images, html main .main4 .main4-images {
+          margin-right: 15px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .main4, html main .main4 {
+        padding-left: 30px; }
+        body main .main4 .main4-images, html main .main4 .main4-images {
+          margin-right: 15px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .main4, html main .main4 {
+        padding-left: 30px; }
+        body main .main4 .main4-images, html main .main4 .main4-images {
+          margin-right: 15px; } }
+    body main .main5, html main .main5 {
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../images/background2.jpg");
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin-top: 150px;
+      padding-bottom: 22vh; }
+      body main .main5 .slider, html main .main5 .slider {
+        padding-top: 100px;
+        margin-right: 30px;
+        margin-left: 30px;
+        color: white; }
+        body main .main5 .slider .slider-content h5, html main .main5 .slider .slider-content h5 {
+          margin-left: 15px;
+          margin-top: 50px;
+          color: rgba(255, 255, 255, 0.8);
+          letter-spacing: 2px;
+          display: inline; }
+        body main .main5 .slider .slider-content img, html main .main5 .slider .slider-content img {
+          height: 60px;
+          width: 60px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-top: 20px;
+          display: inline; }
+        body main .main5 .slider .slider-content .span1, html main .main5 .slider .slider-content .span1 {
+          font-size: 100px;
+          color: #FA5B0F; }
+        body main .main5 .slider .slider-content p, html main .main5 .slider .slider-content p {
+          font-size: 22px;
+          letter-spacing: 2px; }
+    @media (max-width: 575.98px) {
+      body main .slider .slider-content h5, html main .slider .slider-content h5 {
+        font-size: 14px; }
+      body main .slider .slider-content p, html main .slider .slider-content p {
+        font-size: 18px !important; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .slider .slider-content h5, html main .slider .slider-content h5 {
+        font-size: 16px; }
+      body main .slider .slider-content p, html main .slider .slider-content p {
+        font-size: 18px !important; } }
+    body main .main6, html main .main6 {
+      margin-left: 50px; }
+      body main .main6 .submit, html main .main6 .submit {
+        width: 170px; }
+      body main .main6 textarea, html main .main6 textarea {
+        padding: 10px 0px 100px 10px !important; }
+      body main .main6 .form-defaults, html main .main6 .form-defaults {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0px 10px 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        font-size: 13px; }
+      body main .main6 ::placeholder, html main .main6 ::placeholder {
+        color: rgba(0, 0, 0, 0.5); }
+      body main .main6 p, html main .main6 p {
+        color: rgba(0, 0, 0, 0.5);
+        margin-top: 40px; }
+    @media (max-width: 575.98px) {
+      body main .main6, html main .main6 {
+        margin-left: 30px;
+        margin-right: 30px; }
+        body main .main6 p, html main .main6 p {
+          margin-top: 20px; } }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      body main .main6, html main .main6 {
+        margin-left: 30px;
+        margin-right: 30px; }
+        body main .main6 p, html main .main6 p {
+          margin-top: 20px; } }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      body main .main6, html main .main6 {
+        margin-left: 30px;
+        margin-right: 30px; }
+        body main .main6 p, html main .main6 p {
+          margin-top: 20px; } }
+    body main .footer, html main .footer {
+      background-color: black;
+      padding-left: 50px;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      margin-top: 100px; }
+      body main .footer p, html main .footer p {
+        color: white; }
+        body main .footer p span, html main .footer p span {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          cursor: pointer;
+          transition: 0.5s; }
+          body main .footer p span:hover, html main .footer p span:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+.button {
+  background: #FA5B0F;
+  color: white;
+  border: none;
+  margin-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 200px;
+  margin-top: 10px;
+  transition: 0.3s;
+  letter-spacing: 1.3px; }
+
+.icon.close .top {
+  transform: rotate(45deg);
+  top: 28% !important; }
+
+.icon.close .center, .icon.close .bottom {
+  transform: rotate(-45deg);
+  top: 28% !important; }
+
+.slider {
+  transform: translate(0%) !important; }
+
+.setting-slide {
+  transform: translate(-354%); }
+
+@media (max-width: 575.98px) {
+  body main {
+    margin-left: 0;
+    padding-top: 15px; }
+  body .wrapper {
+    display: block; }
+  body header {
+    background: white;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding-left: 0px; }
+    body header .logo2 {
+      display: block; }
+    body header .logo1 {
+      display: none; }
+    body header nav {
+      display: none; }
+      body header nav ul {
+        margin-left: 20px;
+        padding-top: 10px; }
+        body header nav ul li:not(:last-child) {
+          border-bottom: none; }
+          body header nav ul li:not(:last-child):hover {
+            border-bottom: none; }
+        body header nav ul li a {
+          color: black;
+          margin-right: 0px; }
+    body header .icons {
+      display: none; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body main {
+    margin-left: 0;
+    padding-top: 15px; }
+  body .wrapper {
+    display: block; }
+  body header {
+    background: white;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding-left: 0px; }
+    body header .logo2 {
+      display: block; }
+    body header .logo1 {
+      display: none; }
+    body header nav {
+      display: none; }
+      body header nav ul {
+        margin-left: 20px;
+        padding-top: 10px; }
+        body header nav ul li:not(:last-child) {
+          border-bottom: none; }
+          body header nav ul li:not(:last-child):hover {
+            border-bottom: none; }
+        body header nav ul li a {
+          color: black;
+          margin-right: 0px; }
+    body header .icons {
+      display: none; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body main {
+    margin-left: 0;
+    padding-top: 15px; }
+  body .wrapper {
+    display: block; }
+  body header {
+    background: white;
+    position: static;
+    height: auto;
+    width: 100%;
+    padding-left: 0px; }
+    body header .logo2 {
+      display: block; }
+    body header .logo1 {
+      display: none; }
+    body header nav {
+      display: none; }
+      body header nav ul {
+        margin-left: 20px;
+        padding-top: 10px; }
+        body header nav ul li:not(:last-child) {
+          border-bottom: none; }
+          body header nav ul li:not(:last-child):hover {
+            border-bottom: none; }
+        body header nav ul li a {
+          color: black;
+          margin-right: 0px; }
+    body header .icons {
+      display: none; } }
+
+/*# sourceMappingURL=style.css.map */

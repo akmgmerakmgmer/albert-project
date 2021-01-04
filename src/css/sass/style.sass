@@ -1,0 +1,156 @@
+//Variables 
+$color:#FA5B0F
+
+
+
+body,html    
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: montserrat
+    letter-spacing: 0.8px
+    position: relative
+    scroll-behavior: smooth
+    overflow-x: hidden
+    @import colors
+    @import Navbutton
+    @import Navbar
+    main    
+        margin-left: 348px
+        @import main1
+        @import titles
+        @import main2
+        @import main3
+        @import main4
+        @import main5
+        @import main6
+        @import 'footer'
+        
+                                
+// Random Classes     
+.button  
+    background: $color
+    color: white
+    border: none
+    margin-right: 20px
+    padding-top: 15px
+    padding-bottom: 15px
+    width: 200px  
+    margin-top: 10px
+    transition: 0.3s
+    letter-spacing: 1.3px       
+.icon.close .top
+    transform: rotate(45deg)
+    top: 28% !important
+.icon.close .center , .icon.close .bottom
+    transform: rotate(-45deg)
+    top: 28%  !important                        
+.slider 
+    transform: translate(0%) !important      
+.setting-slide  
+    transform: translate(-354%)
+@media (max-width: 575.98px)
+    body
+        main    
+            margin-left: 0
+            padding-top: 15px
+        .wrapper    
+            display: block
+        header  
+            background: white
+            position: static
+            height: auto
+            width: 100%
+            padding-left: 0px
+            .logo2  
+                display: block
+            .logo1
+                display: none
+            nav     
+                display: none
+                ul  
+                    margin-left: 20px
+                    padding-top: 10px
+                    li:not(:last-child)
+                        border-bottom: none
+                        &:hover
+                            border-bottom: none
+                    li  
+                        a
+                            color: black
+                            margin-right: 0px
+            .icons  
+                display: none
+
+            
+
+@media (min-width: 576px) and (max-width: 767.98px)
+    body
+        main    
+            margin-left: 0
+            padding-top: 15px
+        .wrapper    
+            display: block
+        header  
+            background: white
+            position: static
+            height: auto
+            width: 100%
+            padding-left: 0px
+            .logo2  
+                display: block
+            .logo1
+                display: none
+            nav     
+                display: none
+                ul  
+                    margin-left: 20px
+                    padding-top: 10px
+                    li:not(:last-child)
+                        border-bottom: none
+                        &:hover
+                            border-bottom: none
+                    li  
+                        a
+                            color: black
+                            margin-right: 0px
+            .icons  
+                display: none
+
+@media (min-width: 768px) and (max-width: 991.98px)
+    body
+        main    
+            margin-left: 0
+            padding-top: 15px
+        .wrapper    
+            display: block
+        header  
+            background: white
+            position: static
+            height: auto
+            width: 100%
+            padding-left: 0px
+            .logo2  
+                display: block
+            .logo1
+                display: none
+            nav     
+                display: none
+                ul  
+                    margin-left: 20px
+                    padding-top: 10px
+                    li:not(:last-child)
+                        border-bottom: none
+                        &:hover
+                            border-bottom: none
+                    li  
+                        a
+                            color: black
+                            margin-right: 0px
+            .icons  
+                display: none
+
+
+@media (min-width: 992px) and (max-width: 1199.98px)
+
+@media (min-width: 1200px)                 
